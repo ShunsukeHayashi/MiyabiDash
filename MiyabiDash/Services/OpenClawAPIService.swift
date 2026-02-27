@@ -11,7 +11,7 @@ class OpenClawAPIService: ObservableObject {
     
     // Default to Tailscale IP - configurable in Settings
     @AppStorage("apiEndpoint") var apiEndpoint = "http://100.86.157.40:18795/status"
-    @AppStorage("refreshInterval") var refreshInterval: TimeInterval = 30
+    @AppStorage("refreshInterval") var refreshInterval: TimeInterval = 60
     
     init() {
         startAutoRefresh()

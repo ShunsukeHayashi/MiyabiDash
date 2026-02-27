@@ -2,7 +2,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @AppStorage("apiEndpoint") var apiEndpoint = "http://100.86.157.40:18795/status"
-    @AppStorage("refreshInterval") var refreshInterval: TimeInterval = 30
+    @AppStorage("refreshInterval") var refreshInterval: TimeInterval = 60
     @EnvironmentObject var api: OpenClawAPIService
     @State private var testResult: String?
     
